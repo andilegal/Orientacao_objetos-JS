@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+	<script type="text/babel">
+	
+
+	let nome = 'Jorge'
+let idade = 29
+let sexo ='masculino'
+let profissao = 'programador'
+
+let objeto ={
+	nome: nome,
+	idade: idade,
+	sexo: sexo,
+	profissao: profissao,
+	exibirResumo: function  () {
+		// body... 
+		console.log(`${this.nome}, ${this.idade} anos, ${this.sexo} é ${this.profissao}`)
+	}
+}
+console.log(objeto)
+objeto.exibirResumo()
+
+let objeto2 ={
+	nomeTeste: nome, // nome = nome variavel / valor = valor da variavel
+	 idade,
+	 sexo,
+	 profissao,
+	exibirResumo() {
+		// body... 
+		console.log(`${this.nomeTeste}, ${this.idade} anos, ${this.sexo} é ${this.profissao}`)
+	}
+}
+console.log(objeto2)
+objeto.exibirResumo()
+</script>
+</head>
+<body>
+	
+</body>
+</html>

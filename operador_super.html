@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+	<script type="text/babel">
+	class Animal{
+	constructor(cor,tamanho,peso){
+		this.cor = cor
+		this.tamanho= tamanho	
+		this.peso = peso
+	}
+
+	dormir(){
+		console.log('Dormir')
+	}
+}
+
+class Passaro extends Animal{
+	constructor(bico,cor,tamanho,peso){
+		super(cor,tamanho,peso)
+		this.bico = bico
+	}
+voar(){
+console.log('Voar')
+}
+
+}
+class Papagaio extends Passaro{
+	constructor(saberFalar,cor,tamanho,peso){
+		super('Media',cor,tamanho, peso)
+		this.saberFalar =saberFalar
+	}
+	falar(){
+		console.log('Falar')
+	}
+}
+
+let papagaio = new Papagaio(true,'verde',25,350)
+let papagaio2 = new Papagaio(true, 'roxo', 35,250)
+console.log(papagaio2)
+console.log(papagaio)
+</script>
+</head>
+<body>
+	<div id="output"></div>
+</body>
+</html>
